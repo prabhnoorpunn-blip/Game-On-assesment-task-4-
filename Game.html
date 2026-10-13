@@ -1,1 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Snake — JavaScript Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game-wrap">
+    <h1>Snake</h1>
+    <div class="hud">
+      <div>Score: <span id="score">0</span></div>
+      <div>High: <span id="highscore">0</span></div>
+    </div>
+    <canvas id="game" width="400" height="400"></canvas>
+    <div class="controls">
+      <button id="restart">Restart</button>
+      <small>Use arrow keys or WASD to move. Press Restart or Enter to restart after game over.</small>
+    </div>
+  </div>
 
+  <script src="game.js"></script>
+</body>
+</html>
