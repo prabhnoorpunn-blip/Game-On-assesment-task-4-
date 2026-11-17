@@ -1,27 +1,28 @@
-<!doctype html>
-<html lang="en">
+
+
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Snake — JavaScript Game</title>
-  <link rel="stylesheet" href="style.css">
+<title>NEON RUSH</title>
+<style>
+body{background:#09091c;color:white;text-align:center;font-family:Arial}
+h1{color:#00ffff;font-size:45px;text-shadow:0 0 20px cyan}
+canvas{background:#151535;border:3px solid #00ffff;border-radius:12px;max-width:95%}
+button{background:#ff00cc;color:white;padding:14px 25px;border:0;border-radius:12px;font-size:18px;margin:8px;cursor:pointer}
+button:hover{background:#00ccff}
+#menu{padding:20px}
+</style>
 </head>
 <body>
-  <div class="game-wrap">
-    <h1>Snake</h1>
-    <p>Hello, welcome to Snake!
-    </p>
-    <div class="hud">
-      <div>Score: <span id="score">0</span></div>
-      <div>High: <span id="highscore">0</span></div>
-    </div>
-    <canvas id="game" width="400" height="400"></canvas>
-    <div class="controls">
-      <button id="restart">Restart</button>
-      <small>Use arrow keys or WASD to move. Press Restart or Enter to restart after game over.</small>
-    </div>
-  </div>
-
-  <script src="game.js"></script>
+<div id="menu">
+<h1>⚡ NEON RUSH ⚡</h1>
+<h2>Choose your game mode</h2>
+<button onclick="start(1)">1 PLAYER</button>
+<button onclick="start(2)">2 PLAYERS</button>
+</div>
+<h2 id="info">Collect crystals. Avoid enemies!</h2>
+<canvas id="game" width="800" height="500"></canvas>
+<div id="end"></div>
+<script src="game.js"></script>
 </body>
 </html>
